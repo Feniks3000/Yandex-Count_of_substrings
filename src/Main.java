@@ -49,31 +49,6 @@ public class Main {
         for(Map.Entry<String, Integer> edge : edges.entrySet()){
             output.write(edge.getKey()+ " " + edge.getValue()+"\n");
         }
-//        Set edges2 = edges.entrySet();
-//        Iterator iterator = edges.values().iterator();
-//        while(iterator.hasNext()) {
-//            Map.Entry edge = (Map.Entry)iterator.next();
-//            output.write(edge.getKey()+ " " + edge.getValue()+"\n");
-//        }
-
-//        List list=new ArrayList(edges.entrySet());
-//        Collections.sort(list,new Comparator(){
-//            public int compare(Object obj1, Object obj2){
-//                return ((Comparable)((Map.Entry)(obj2)).getValue()).compareTo(((Map.Entry)(obj1)).getValue());
-//            }
-//        });
-//        HashMap sortedHashMap = new LinkedHashMap();
-//        for (Iterator it = list.iterator(); it.hasNext();) {
-//            Map.Entry entry = (Map.Entry) it.next();
-//            sortedHashMap.put(entry.getKey(), entry.getValue());
-//        }
-//
-//        Set sortedEdges = sortedHashMap.entrySet();
-//        Iterator iterator = sortedEdges.iterator();
-//        while(iterator.hasNext()) {
-//            Map.Entry edge = (Map.Entry)iterator.next();
-//            output.write(edge.getKey()+ " " + edge.getValue()+"\n");
-//        }
 
         output.close();
     }
